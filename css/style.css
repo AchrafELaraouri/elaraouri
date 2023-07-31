@@ -39,6 +39,23 @@
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+<style>
+    /* Ajoutez ce CSS pour fixer la position de la barre de navigation */
+    @media (max-width: 767.98px) {
+        body {
+            padding-top: 56px; /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
+        }
+        .navbar.fixed-top {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target fixed-top" id="ftco-navbar">
+    <!-- Votre code de barre de navigation existant ici -->
+</nav>
 
 html {
   font-family: sans-serif;
@@ -102,7 +119,7 @@ ol ul,
 ul ol {
   margin-bottom: 0; }
 .about-item {
-    margin-bottom: 8px; /* Ajustez cette valeur selon vos préférences */
+    margin-bottom: 8px; /* Ajustez cette valeur selon vos prÃ©fÃ©rences */
 }
 
 dt {
