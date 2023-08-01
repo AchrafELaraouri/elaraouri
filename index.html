@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
@@ -31,19 +31,19 @@
 
 
 
-   <!-- Votre code HTML existant -->
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-    <div class="container">
-        <div class="navbar-icon">
+    <!-- Votre code HTML existant -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <div class="navbar-icon">
                 <a class="navbar-brand" href="index.html">ELARE</a>
                 <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNav()">
                     <span class="oi oi-menu"></span> Menu
                 </button>
             </div>
 
-        <div class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav nav ml-auto">
-                <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
                     <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
                     <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
                     <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
@@ -51,98 +51,104 @@
                     <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
                     <li class="nav-item"><a href="#professional-section" class="nav-link"><span>professional And academic memories</span></a></li>
                     <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-            </ul>
+                </ul>
+            </div>
         </div>
-    </div>
-    
-</nav>
 
-<!-- Ajoutez le code JavaScript ci-dessous -->
-<script>
-    // Écoutez les clics sur les liens de la liste du menu
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            // Fermez la liste du menu en simulant un clic sur le bouton de bascule (hamburger)
-            const navbarToggler = document.querySelector('.navbar-toggler');
-            if (navbarToggler.getAttribute('aria-expanded') === 'true') {
-                navbarToggler.click();
-            }
+    </nav>
+
+    <!-- Ajoutez le code JavaScript ci-dessous -->
+    <script>
+        // Écoutez les clics sur les liens de la liste du menu
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                // Fermez la liste du menu en simulant un clic sur le bouton de bascule (hamburger)
+                const navbarToggler = document.querySelector('.navbar-toggler');
+                if (navbarToggler.getAttribute('aria-expanded') === 'true') {
+                    navbarToggler.click();
+                }
+            });
         });
-    });
-</script>
-<!-- Fin du bloc de code JavaScript avec l'instruction </script> -->
+    </script>
+    <!-- Fin du bloc de code JavaScript avec l'instruction </script> -->
 
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="row justify-content-center pb-5">
+                <div class="col-md-10 heading-section text-center ftco-animate">
 
-   <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    <div class="container d-flex justify-content-center align-items-center">
-        <div class="row justify-content-center pb-5">
-            <div class="col-md-10 heading-section text-center ftco-animate">
+                    <div class="slider-item">
+                        <div class="overlay"></div>
+                        <div class="container d-flex justify-content-center align-items-center">
+                            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+                                 data-scrollax-parent="true">
 
-                <div class="slider-item">
-                    <div class="overlay"></div>
-                    <div class="container d-flex justify-content-center align-items-center">
-                        <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-                            data-scrollax-parent="true">
+                                <div class="one-forth d-flex align-items-center ftco-animate"
+                                     data-scrollax=" properties: { translateY: '70%' }">
+                                    <div class="text">
 
-                            <div class="one-forth d-flex align-items-center ftco-animate"
-                                data-scrollax=" properties: { translateY: '70%' }">
-                                <div class="text">
-
-                                    <h1 class="mb-4 mt-3">I'm <span>Achraf El araouri</span></h1>
-                                    <h2 class="mb-4">Mechanical Engineer and Software Developer</h2>
-                                    <p><a href="https://www.linkedin.com/in/achraf-elaraouri-6222a7247/"
-                                            class="btn btn-primary py-3 px-4 mb-3">Follow Me on LinkedIn</a> <a
-                                            href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My
-                                            works</a></p>
+                                        <h1 class="mb-4 mt-3">I'm <span>Achraf El araouri</span></h1>
+                                        <h2 class="mb-4">Mechanical Engineer and Software Developer</h2>
+                                        <p>
+                                            <a href="https://www.linkedin.com/in/achraf-elaraouri-6222a7247/"
+                                               class="btn btn-primary py-3 px-4 mb-3">Follow Me on LinkedIn</a> <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">
+                                                My
+                                                works
+                                            </a>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
-    </div>
 
 
-</section>
-
+    </section>
 
 
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    <div class="container d-flex justify-content-center align-items-center">
-        <div class="row justify-content-center pb-5">
-            <div class="col-md-10 heading-section text-center ftco-animate">
-
-                <div class="slider-item">
-                    <div class="overlay"></div>
-                    <div class="container d-flex justify-content-center align-items-center">
-                        <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-                            data-scrollax-parent="true">
-
-                            <div class="one-forth d-flex align-items-center ftco-animate"
-                                data-scrollax=" properties: { translateY: '70%' }">
-                                <div class="text">
-
-                                    <h1 class="mb-4 mt-3">I'm <span>Achraf El araouri</span></h1>
-                                    <h2 class="mb-4">Mechanical Engineer and Software Developer</h2>
-                                    <p><a href="https://www.linkedin.com/in/achraf-elaraouri-6222a7247/"
-                                            class="btn btn-primary py-3 px-4 mb-3">Follow Me on LinkedIn</a> <a
-                                            href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My
-                                            works</a></p>
-                                </div>
-                            </div>
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="row justify-content-center pb-5">
+                <div class="col-md-10 heading-section text-center ftco-animate">
+                    <div class="col-md-6 col-lg-5 d-flex">
+                        <div class="img-about img d-flex align-items-stretch">
+                            <div class="overlay"></div>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-10 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">About</h1>
+                    <h2 class="mb-4">About</h2>
+                    <p>
+                        I am a second-year engineering student majoring in Industrial Systems Mechanical Engineering at ENSET MOHAMMEDIA. I also hold a diploma in Industrial Engineering and Maintenance from the SALÉ HIGHER SCHOOL OF TECHNOLOGY.
+                    </p>
+                    <ul class="about-info mt-4 px-md-0 px-2 custom-about-info">
+                        <li class="d-flex"><span>Name:</span> Achraf El araouri</span></li>
+                        <li class="d-flex"><span>Age:</span> 22 Years</span></li>
+                        <li class="d-flex"><span>Address:</span> Morocco, Rabat, Hai Nahda</span></li>
+                        <li class="d-flex"><span>Email:</span> Mr.elaraouri@gmail.com</span></li>
+                        <li class="d-flex"><span>Phone:</span> +212762429366</span></li>
+                    </ul>
 
+
+                    <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                        <div class="text">
+                            <p class="mb-4">
+                                <span class="number" data-number="20">0</span>
+                                <span>Project complete</span>
+                            </p>
+                            <p><a href="https://1drv.ms/b/s!Asb1fwAKTrrhgWVHd_XPKjtpWiGf?e=Byu46Z" class="btn btn-primary py-3 px-3">Download CV</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-
-</section>
+    </section>
 
 
     <section class="ftco-section ftco-no-pb" id="resume-section">
