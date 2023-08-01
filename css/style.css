@@ -67,10 +67,80 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible; }
+<style >
+/* Ajoutez ce CSS pour fixer la position de la barre de navigation */
+@media (max-width: 767.98px) {
+    body
+
+{
+    padding-top: 56px; /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
+}
+/* Ajoutez ce CSS à votre feuille de style existante */
+.navbar-toggler-container {
+    position: fixed;
+    top: 10px; /* Ajustez la valeur "top" selon les besoins pour positionner l'icône */
+    left: 10px; /* Ajustez la valeur "left" selon les besoins pour positionner l'icône */
+    z-index: 9999; /* Définissez une valeur "z-index" élevée pour que l'icône se trouve au-dessus du reste du contenu */
+}
+
+/* Optionnel : Ajoutez un effet de transition pour une apparence plus fluide */
+.navbar-toggler-container {
+    transition: all 0.01s ease;
+}
+
+/* Le style par défaut pour le bouton de menu (vous pouvez ajuster le style selon vos besoins) */
+.navbar-toggler {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* Styles pour l'icône qui suit les mouvements */
+.follow-icon {
+    position: fixed;
+    top: 50px; /* Ajustez cette valeur selon votre préférence */
+    left: 50px; /* Ajustez cette valeur selon votre préférence */
+    z-index: 1000;
+    display: none; /* Masquer l'icône initialement */
+    cursor: pointer;
+}
+
+    /* Styles pour l'icône qui suit les mouvements lorsque le menu est ouvert */
+    .follow-icon.menu-open {
+        display: block;
+    }
+
+    /* Appliquez un style spécifique à l'icône de menu pour qu'elle défile avec la page */
+    #ftco-navbar .navbar-brand {
+        position: relative;
+        transform: translateY(0);
+        transition: transform 0.01s ease;
+    }
+
+    #ftco-navbar.scrolled .navbar-brand {
+        transform: translateY(100%);
+    }
+
+
+.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+}
+
+</style >
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target fixed-top" id="ftco-navbar" >
+<!-- Votre code de barre de navigation existant ici -->
+</nav >
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem; }
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
 
 p {
   margin-top: 0;
@@ -95,20 +165,7 @@ ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem; }
-/* Styles pour l'icône qui suit les mouvements */
-.follow-icon {
-    position: fixed;
-    top: 50px; /* Ajustez cette valeur selon votre préférence */
-    left: 50px; /* Ajustez cette valeur selon votre préférence */
-    z-index: 1000;
-    display: none; /* Masquer l'icône initialement */
-    cursor: pointer;
-}
 
-    /* Styles pour l'icône qui suit les mouvements lorsque le menu est ouvert */
-    .follow-icon.menu-open {
-        display: block;
-    }
 ol ol,
 ul ul,
 ol ul,
