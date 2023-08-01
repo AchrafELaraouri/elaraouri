@@ -95,7 +95,20 @@ ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem; }
+/* Styles pour l'icône qui suit les mouvements */
+.follow-icon {
+    position: fixed;
+    top: 50px; /* Ajustez cette valeur selon votre préférence */
+    left: 50px; /* Ajustez cette valeur selon votre préférence */
+    z-index: 1000;
+    display: none; /* Masquer l'icône initialement */
+    cursor: pointer;
+}
 
+    /* Styles pour l'icône qui suit les mouvements lorsque le menu est ouvert */
+    .follow-icon.menu-open {
+        display: block;
+    }
 ol ol,
 ul ul,
 ol ul,
