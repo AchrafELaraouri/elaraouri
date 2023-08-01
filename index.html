@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -24,13 +23,13 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-   
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-  <!-- Votre code HTML existant -->
- <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
         <div class="container">
             <div class="navbar-icon">
                 <a class="navbar-brand" href="index.html">ELARE</a>
@@ -59,20 +58,17 @@
 
         </div>
     </nav>
-<!-- Ajoutez le code JavaScript ci-dessous -->
-<script>
-    // Écoutez les clics sur les liens de la liste du menu
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            // Fermez la liste du menu en simulant un clic sur le bouton de bascule (hamburger)
-            const navbarToggler = document.querySelector('.navbar-toggler');
-            if (navbarToggler.getAttribute('aria-expanded') === 'true') {
-                navbarToggler.click();
-            }
-        });
-    });
-</script>
 
+    <script>
+        function toggleNav() {
+            var navList = document.getElementById("ftco-nav");
+            if (navList.style.display === "block") {
+                navList.style.display = "none";
+            } else {
+                navList.style.display = "block";
+            }
+        }
+    </script>
 
     <section id="home-section" class="hero">
         <div class="home-slider owl-carousel">
@@ -92,7 +88,8 @@
                     </div>
                 </div>
             </div>
- <div class="slider-item">
+
+            <div class="slider-item">
                 <div class="overlay"></div>
                 <div class="container d-flex justify-content-center align-items-center">
                     <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
@@ -107,7 +104,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
 
