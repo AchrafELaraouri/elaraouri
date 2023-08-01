@@ -30,18 +30,18 @@
 
 
   <!-- Votre code HTML existant -->
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">ELARE</a>
-       <!-- Supposons que cela se trouve dans votre barre de navigation -->
-<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle collapsed fixed-menu-btn" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="oi oi-menu"></span> Menu
-</button>
-
-
-        <div class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav nav ml-auto">
-                        <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+ <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <div class="navbar-icon">
+                <a class="navbar-brand" href="index.html">ELARE</a>
+                <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNav()">
+                    <span class="oi oi-menu"></span> Menu
+                </button>
+            </div>
+            <!-- Reste de la barre de navigation ici -->
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
                     <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
                     <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
                     <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
@@ -49,11 +49,16 @@
                     <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
                     <li class="nav-item"><a href="#professional-section" class="nav-link"><span>professional And academic memories</span></a></li>
                     <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-            </ul>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+        <!-- Icône qui suit les mouvements -->
+        <div class="follow-icon">
+            <span class="oi oi-menu"></span> Menu
+          
 
+        </div>
+    </nav>
 <!-- Ajoutez le code JavaScript ci-dessous -->
 <script>
     // Écoutez les clics sur les liens de la liste du menu
